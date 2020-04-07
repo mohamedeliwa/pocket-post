@@ -15,8 +15,8 @@ const PostCard = (props) => {
         <Card.Text>
           {excerpt}
         </Card.Text>
-        <Link href={`/posts/${slug}`}>
-            <a className="btn btn-primary">Read More &rarr;</a>
+        <Link href="/posts/[slug]" as={`/posts/${slug}`}>
+            <Button variant="primary" >Read More &rarr;</Button>
         </Link>
       </Card.Body>
       <Card.Footer className="text-muted">
